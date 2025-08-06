@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Fake Link Generator</title></head>
+  <body>
+    <h1>Random Link Generator</h1>
+    <a href="#" onclick="go()">Click for Random Error</a>
+    <script>
+      function go() {
+        const slug = Math.random().toString(36).substring(2, 10);
+        window.location.href = slug + ".html";
+      }
+    </script>
+  </body>
+</html>
